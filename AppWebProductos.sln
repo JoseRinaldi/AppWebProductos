@@ -5,9 +5,9 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP-Final-Csharp-3", "TP-Final-Csharp-3\TP-Final-Csharp-3.csproj", "{36260BDA-79C9-463B-A23F-54E496495F2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dominio", "..\..\nivel2csharp\TPFinalNivel2_Rinaldi\dominio\dominio.csproj", "{F3AD4145-2329-430A-A1B1-98B585BFC270}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dominio", "..\..\..\nivel2csharp\TPFinalNivel2_Rinaldi\dominio\dominio.csproj", "{F3AD4145-2329-430A-A1B1-98B585BFC270}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "negocio", "..\..\nivel2csharp\TPFinalNivel2_Rinaldi\negocio\negocio.csproj", "{9FEA21FC-DF5A-4EFD-AC72-4B0B8352AF39}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "negocio", "..\..\..\nivel2csharp\TPFinalNivel2_Rinaldi\negocio\negocio.csproj", "{9FEA21FC-DF5A-4EFD-AC72-4B0B8352AF39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -68,6 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="Detalles.aspx" />
+    <Content Include="Lista.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -77,6 +80,27 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Detalles.aspx.cs">
+      <DependentUpon>Detalles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Detalles.aspx.designer.cs">
+      <DependentUpon>Detalles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lista.aspx.cs">
+      <DependentUpon>Lista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lista.aspx.designer.cs">
+      <DependentUpon>Lista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="MiMaster.Master.cs">
       <DependentUpon>MiMaster.Master</DependentUpon>
@@ -98,11 +122,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\nivel2csharp\TPFinalNivel2_Rinaldi\dominio\dominio.csproj">
+    <ProjectReference Include="..\..\..\..\nivel2csharp\TPFinalNivel2_Rinaldi\dominio\dominio.csproj">
       <Project>{f3ad4145-2329-430a-a1b1-98b585bfc270}</Project>
       <Name>dominio</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\nivel2csharp\TPFinalNivel2_Rinaldi\negocio\negocio.csproj">
+    <ProjectReference Include="..\..\..\..\nivel2csharp\TPFinalNivel2_Rinaldi\negocio\negocio.csproj">
       <Project>{9fea21fc-df5a-4efd-ac72-4b0b8352af39}</Project>
       <Name>negocio</Name>
     </ProjectReference>
