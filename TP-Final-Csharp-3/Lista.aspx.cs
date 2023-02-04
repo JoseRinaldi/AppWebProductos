@@ -1,4 +1,5 @@
-﻿using negocio;
+﻿using dominio;
+using negocio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,10 +14,36 @@ namespace TP_Final_Csharp_3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            NegocioDatosMetodos Negocio = new NegocioDatosMetodos();
-            Session.Add("listapoke", Negocio.listarConSP());
-            dgvPokemon.DataSource = Session["listapoke"];
-            dgvPokemon.DataBind();
+            if (!IsPostBack)
+            {
+                NegocioDatosMetodos Negocio = new NegocioDatosMetodos();
+                Session.Add("listaproductos", Negocio.listarConSP());
+                dgvProductos.DataSource = Session["listaproductos"];
+                dgvProductos.DataBind();
+            }
+        }
+
+        protected void txtfiltrar_TextChanged(object sender, EventArgs e)
+        {
+            List<Articulo> lista = (List<Articulo>)Session["listaproductos"];
+            List<Articulo> listafiltrada = lista.FindAll(x => x.Nombre.ToUpper().Contains(txtfiltrar.Text.ToUpper()));
+            dgvProductos.DataSource = listafiltrada;
+            dgvProductos.DataBind();
+        }
+
+        protected void chkAvanzado_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void ddlCampo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

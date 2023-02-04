@@ -23,6 +23,7 @@
                         <a class="nav-link active" aria-current="page" href="Default.aspx">Home</a>
                         <a class="nav-link" href="Login.aspx">Login</a>
                         <a class="nav-link" href="Detalles.aspx">Detalles</a>
+                        <a class="nav-link" href="Lista.aspx">Lista</a>
                     </div>
                 </div>
             </div>
